@@ -1,0 +1,8 @@
+projet : projet.o fonction.o
+	gcc projet.o fonction.o -o projet
+
+projet.o : projet.c fonction.h
+	gcc -c projet.c
+	
+fonction.o : fonction.c fonction.h
+	gcc -c fonction.c
